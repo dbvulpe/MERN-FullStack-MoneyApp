@@ -7,8 +7,6 @@ router = express.Router();
 
 module.exports = router;
 
-///Doesn't work on Postman - pls resolve. 
-//Once resolved, pls show what to type on Postman to do post a new user.
 router.post("/accounts", (request, response) => {
 
   if (validate.is_blank(request.body.user_id)) {
